@@ -199,6 +199,12 @@ Header home
   }
 }
 
+/*
+===============
+Projects
+===============
+*/
+
 .section-projects{
   .grid-projects{
     display: grid;
@@ -271,6 +277,94 @@ Header home
       &:hover{
         box-shadow: $--shadow-3;
         transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+/*
+===============
+Blogs
+===============
+*/
+.section-blogs{
+  .section-center{
+    .blog-center{
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      gap: 5rem;
+      .grid-blog{
+        .item-blog{
+          margin-bottom: 1rem;
+          box-shadow: $--shadow-1;
+          padding: 1rem;
+          background: $--clr-white;
+          border-radius: 6px;
+          display: flex;
+          transition: $--transition;
+          .container-img{
+            flex: 0 0 30%;
+            img{
+              height: 100%;
+            object-fit: cover;
+              border-radius: 6px;
+            }
+          }
+          .content{
+
+            flex: 1;
+            padding: .5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .category{
+              background: $--grey-200;
+              color: $--grey-500;
+              border-radius: 6px;
+              padding: .2rem 1rem;
+              font-weight: 600;
+            }
+            .title-blog{
+              font-size: 20px;
+              margin: .8rem 0 1rem 0;
+              color: $--grey-800;
+              font-weight: 600;
+            }
+            p{
+
+            }
+            .author{
+              display: flex;
+              align-items: flex-start;
+              img{
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+              }
+              .info{
+                margin-left: 1rem;
+                .name{
+                  font-size: 14px;
+                  color: $--grey-500;
+                }
+                .time{
+                  color: $--grey-400;
+                  margin: 0;
+                  font-size: 14px;
+                }
+              }
+            }
+
+          }
+          &:hover{
+            box-shadow: $--shadow-3;
+            transform: translateY(-3px);
+          }
+        }
+      }
+      .aside-blog{
+
       }
     }
   }
