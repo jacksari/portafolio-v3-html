@@ -140,7 +140,7 @@ Nav
 ===============
 */
 nav{
-  background: transparent;
+  background: $--clr-white;
   .section-center{
     display: flex;
     align-items: center;
@@ -241,6 +241,10 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        .jack{
+          color: $--clr-primary-5;
+          font-weight: 600;
+        }
       }
     }
     .message{

@@ -280,6 +280,13 @@ Projects
       }
     }
   }
+  .container-btn{
+    text-align: center;
+    margin-top: 2rem;
+    @media screen and (min-width: 600px) {
+        margin-top: 4rem;
+    }
+  }
 }
 
 /*
@@ -303,7 +310,7 @@ Blogs
           display: flex;
           transition: $--transition;
           .container-img{
-            flex: 0 0 30%;
+            flex: 0 0 40%;
             img{
               height: 100%;
             object-fit: cover;
@@ -365,6 +372,13 @@ Blogs
       }
       .aside-blog{
 
+      }
+    }
+    .container-btn{
+      text-align: center;
+      margin-top: 2rem;
+      @media screen and (min-width: 600px) {
+        margin-top: 4rem;
       }
     }
   }

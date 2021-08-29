@@ -1,0 +1,22 @@
+.page-contact{
+  .section-center{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 5rem;
+    .form{
+      h1{
+        font-size: 48px;
+      }
+      h3{
+        font-size: 20px;
+        margin: 2rem 0;
+        letter-spacing: $--spacing-1;
+        color: $--grey-400;
+        font-weight: 300;
+      }
+    }
+    .aside-contact{
+
+    }
+  }
+}

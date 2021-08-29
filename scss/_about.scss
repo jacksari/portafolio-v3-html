@@ -1,0 +1,43 @@
+.page-about{
+  .section-center{
+    h1{
+      font-size: 48px;
+    }
+    h2{
+      font-size: 20px;
+      margin: 2rem 0;
+      letter-spacing: $--spacing-1;
+      color: $--grey-400;
+      font-weight: 300;
+    }
+    img{
+      height: 450px;
+      object-fit: cover;
+    }
+    .grid-about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      margin-top: 4rem;
+      .title{
+        padding-left: 2rem;
+        border-left: 4px solid $--grey-400;
+        margin-bottom: 3rem;
+      }
+      .story{
+
+      }
+      .others{
+        .item-other{
+          margin-bottom: 3rem;
+          p{
+            background: $--clr-white;
+            padding: 2rem;
+            box-shadow: $--shadow-1;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
