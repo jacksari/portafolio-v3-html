@@ -42,10 +42,10 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -54,12 +54,11 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
   color: $--grey-500;
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   h2 {
     font-size: 2.5rem;
@@ -159,6 +158,10 @@ nav{
       }
     }
     .search{
+      display: none;
+      @media screen and (min-width: 900px) {
+          display: flex;
+      }
       .container-input{
         display: flex;
         align-items: center;
@@ -181,8 +184,11 @@ nav{
       }
     }
     .links{
-      display: flex;
+      display: none;
       align-items: center;
+      @media screen and (min-width: 600px) {
+          display: flex;
+      }
       a{
         margin: 0 .7rem;
         color: $--grey-600;
@@ -191,6 +197,15 @@ nav{
         &:hover{
           color: $--clr-primary-5;
         }
+      }
+    }
+    .bars-mobile{
+      display: flex;
+      i{
+        font-size: 20px;
+      }
+      @media screen and (min-width: 600px) {
+          display: none;
       }
     }
   }
@@ -222,8 +237,16 @@ footer{
   .section-center{
     .grid-footer{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 4rem;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      @media screen and (min-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+      @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 4rem;
+      }
       .item-footer{
         .links,
         .social-links{
@@ -241,9 +264,30 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
+        order: 4;
+        @media screen and (min-width: 600px) {
+            align-items: normal;
+          order: 1 !important;
+        }
         .jack{
           color: $--clr-primary-5;
           font-weight: 600;
+        }
+      }
+      .item2{
+        @media screen and (min-width: 600px) {
+          order: 2 !important;
+        }
+      }
+      .item3{
+        @media screen and (min-width: 600px) {
+          order: 3 !important;
+        }
+      }
+      .item4{
+        @media screen and (min-width: 600px) {
+          order: 4 !important;
         }
       }
     }
@@ -280,6 +324,12 @@ loading
   margin: 0 auto;
 }
 
+.box{
+  background: $--clr-white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: $--shadow-1;
+}
 
 .line-red{
   border: 1px solid red;
