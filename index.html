@@ -26,17 +26,54 @@
                 </div>
             </div>
             <div class="links">
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="about.html">About me</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <div class="bars-mobile">
+            <div class="bars-mobile" id="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+
+    <div class="sidebar" id="nav-links">
+        <div class="head">
+            <i id="nav-toggle-sidebar" class="far fa-times-circle"></i>
+        </div>
+        <ul class="page-links">
+            <li>
+                <a class="active" href="#">1. Home</a>
+            </li>
+            <li>
+                <a href="projects.html">2. Projects</a>
+            </li>
+            <li>
+                <a href="blogs.html">3. Blogs</a>
+            </li>
+            <li>
+                <a href="about.html">4. About</a>
+            </li>
+            <li>
+                <a href="contact.html">5. Contact</a>
+            </li>
+        </ul>
+        <div class="social-links">
+            <a target="_blanck" href="https://www.facebook.com/jack.sari.37/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a target="_blanck" href="https://www.linkedin.com/in/jacksari/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blanck" href="https://github.com/jacksari">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a target="_blanck" href="https://twitter.com/sari_jack">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+    </div>
 
     <header class="header-home section">
         <div class="section-center">
@@ -369,6 +406,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 
 </body>
 </html>

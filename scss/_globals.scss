@@ -110,7 +110,10 @@ p {
   }
 }
 .section{
-  padding: 5rem 0;
+  padding: 3rem 0;
+  @media screen and (min-width: 900px) {
+      padding: 5rem 0;
+  }
 }
 .section-title{
   text-align: center;
@@ -140,6 +143,12 @@ Nav
 */
 nav{
   background: $--clr-white;
+  border-bottom: 2px solid #eff3f5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   .section-center{
     display: flex;
     align-items: center;
@@ -155,6 +164,10 @@ nav{
       }
       p{
         margin: 0;
+      }
+      transition: $--transition;
+      &:hover{
+        transform: scale(1.1);
       }
     }
     .search{
@@ -198,11 +211,20 @@ nav{
           color: $--clr-primary-5;
         }
       }
+      .active{
+        color: $--clr-primary-5;
+      }
     }
     .bars-mobile{
       display: flex;
       i{
-        font-size: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        color: $--clr-primary-5;
+        transition: $--transition;
+        &:hover{
+          color: $--clr-primary-7;
+        }
       }
       @media screen and (min-width: 600px) {
           display: none;
@@ -326,9 +348,81 @@ loading
 
 .box{
   background: $--clr-white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: $--shadow-1;
+  @media screen and (min-width: 600px) {
+      padding: 2rem;
+  }
+}
+
+/*
+===============
+Sidebar
+===============
+*/
+.sidebar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20;
+  transform: translateX(-100%);
+  transition: $--transition;
+  @media screen and (min-width: 500px) {
+      width: 80%;
+  }
+  @media screen and (min-width: 600px) {
+      display: none;
+  }
+  .head{
+    text-align: right;
+    z-index: 40;
+    i{
+      font-size: 32px;
+      color: $--clr-primary-5;
+      cursor: pointer;
+    }
+  }
+  .page-links{
+    li{
+      margin: .5rem 0;
+      a{
+        font-size: 28px;
+        transition: $--transition;
+        color: #551a8b;
+        &:hover{
+          color: $--clr-primary-5;
+        }
+      }
+      .active{
+        color: $--clr-primary-5;
+      }
+    }
+  }
+  .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      margin: 0 1rem;
+      i{
+        font-size: 30px;
+      }
+      &:hover{
+        color: $--clr-primary-5;
+      }
+    }
+  }
+}
+.sidebar-active{
+  transform: translateX(0);
 }
 
 .line-red{
