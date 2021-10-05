@@ -5,7 +5,7 @@
 2. Projects
 3. Blogs
 4. Contact
-5. About
+5. Aboutn
 
 ## CSS
 El css se hizo con sass
