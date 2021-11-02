@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PDF Result Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: #e0e0e0;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            background: #e0e0e0;
+            position: relative;
+        }
+        .header{
+            height: 220px;
+            background: transparent;
+            padding: 0 12rem;
+            position: relative;
+        }
+        .header .logo{
+            position: relative;
+        }
+        .header .logo img{
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+        .header .logo .info{
+            position: absolute;
+            left: 100px;
+            top: 20px;
+        }
+        .header .logo .info h2{
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 30px;
+            color: #404141;
+        }
+        .header .logo .info p{
+            margin: 0;
+            font-size: 16px;
+            width: 140px;
+            line-height: 1.1;
+            color: #3d3c3d;
+        }
+        .header .cert{
+            position: absolute;
+            top: 0;
+            right: 12rem;
+        }
+        .header .cert img{
+
+        }
+        .body{
+            text-align: center;
+            padding: 0 15rem;
+            background: #e0e0e0;
+            height: 600px;
+        }
+        h1{
+            font-size: 32px;
+            color: #454545;
+        }
+        h2{
+            font-size: 40px;
+            color: #6144df;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 22px;
+            margin: 1rem 0;
+            font-weight: 300;
+            color: #3d3c3d;
+        }
+        h4{
+            margin: 1rem 0;
+            color: #6144df;
+            font-size: 32px;
+        }
+        p{
+            margin: 1.5rem 0;
+            font-size: 22px;
+            color: #3d3c3d;
+        }
+        .footer{
+            position: relative;
+            height: 220px;
+            padding: 0 15rm;
+        }
+        .footer .fecha {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .footer .fecha p{
+            color: #3d3c3d;
+            font-weight: 300;
+
+        }
+        .footer img{
+            width: 250px;
+            height: 100px;
+            object-fit: contain;
+
+        }
+        .footer .img2{
+            position: absolute;
+            right: 12rem;
+            top: 0
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="https://res.cloudinary.com/mikunaalli/image/upload/v1633519954/dened/Logo_dened_morado_1_xjjldv.png" alt="">
+            <div class="info">
+                <h2>Dened</h2>
+                <p>Escuela online de Odontología</p>
+            </div>
+        </div>
+        <div class="cert">
+            <img src="https://res.cloudinary.com/mikunaalli/image/upload/v1633520783/dened/Screenshot_140_taekbd.png" alt="">
+        </div>
+    </div>
+    <div class="body">
+        <h2>CERTIFICADO</h2>
+        <h3>Otorgado a:</h3>
+        <h1>Juan Carlos Espinoza</h1>
+        <p>Por haber completado satisfactoriamente el curso de 04 horas de duración:</p>
+        <h4>Sedación Medicamentosa</h4>
+        <p>Dictado por: CD. Esp. María Pastor</p>
+    </div>
+    <div class="footer">
+        <img src="https://res.cloudinary.com/mikunaalli/image/upload/v1633523578/dened/Screenshot_142_l3jryy.png" alt="">
+        <div class="fecha">
+            <p>05 de junio del 2021</p>
+        </div>
+        <img class="img2" src="https://res.cloudinary.com/mikunaalli/image/upload/v1633523578/dened/Screenshot_141_gbqmf8.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>
